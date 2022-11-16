@@ -1,0 +1,31 @@
+@import "templates.scss";
+
+.are-you {
+   width: 100%;
+   &__title{
+      text-align: center;
+      margin: 0 0 20px 0;
+   }
+   &__subtitle{
+      text-align: center;
+      margin: 0 0 20px 0;
+   }
+   &__subtitle:last-child{
+      margin: 0;
+   }
+}
+
+.are-you-container{
+   margin-bottom: 83px;
+   @media screen and (max-width: 770px ) {
+      margin-bottom: 0px;
+   }
+}
+
+.title {
+   @extend .styleh1;
+}
+
+.subtitle {
+   @extend .styleh3;
+}

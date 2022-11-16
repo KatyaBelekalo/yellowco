@@ -1,0 +1,46 @@
+@import "templates.scss";
+
+.welcome {
+   width: 100%;
+   &__icone {
+      width: 325px;
+      max-height: 126.5px;
+      @media screen and (max-width: 770px ) {
+         width: 100%;
+         max-height: 255px;
+      }
+   }
+   &__title {
+      text-align: center;
+      padding-top: 27px;
+      margin-bottom: 20px;
+   }
+   &__subtitle {
+      font-weight: bold;
+      text-align: center;
+      padding-top: 27px;
+      margin-bottom: 6px;
+   }
+   &__text {
+      text-align: center;
+      padding-top: 34px;
+   }
+   &__btn {
+      display: block;
+      margin: 0 auto;
+   }
+}
+.welcome-container{
+   margin-bottom: 83px;
+   @media screen and (max-width: 770px ) {
+      margin-bottom: 0;
+   }
+}
+
+.title {
+   @extend .styleh1;
+}
+
+.text {
+   @extend .styleText;
+}

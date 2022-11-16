@@ -1,0 +1,108 @@
+@import "templates.scss";
+
+.link-blog {
+    &__subtitle {
+        margin-bottom: 34px;
+    }
+    &__link {
+    text-decoration: none;
+    }
+    &__image {
+        width: 100%;
+        max-height: 221px;
+        @media screen and (max-width: 770px ) {
+            max-height: 310px;
+        }
+    }
+    &__button {
+        display: block;
+        margin-left: 52%;
+        margin-bottom: 17px;
+        @media screen and (max-width: 770px ) {
+            margin-left: 38%;
+            margin-left: 0;
+        }
+    }
+    &__icone {
+        width: 75%;
+        max-height: 98px;
+        transition: fill 170ms ease-in-out;
+    }
+}
+
+.link-blog-container {
+    margin-bottom: 17px;
+    @media screen and (max-width: 770px ) {
+        margin-bottom: 0;
+    }
+}
+
+.subtitle {
+    @extend .styleh3;
+}
+
+.link-blog-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 98px;
+    position: relative;
+    @media screen and (max-width: 770px ) {
+        flex-wrap: wrap;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-left: 30px solid white;
+        filter: drop-shadow(0 0 4px grey);
+        border-bottom: 15px solid transparent;
+        top: 42%;
+        left: 35.5%;
+        cursor: pointer;
+        @media screen and (max-width: 770px ) {
+            top: 22%;
+            left: 73%;
+        }
+    }
+}
+
+.link-blog-column{
+    width: calc(100%/4 - 29px);
+    @media screen and (max-width: 770px ) {
+        width: calc(100%/2 - 29px);
+    }
+}
+
+.button-wrap{
+    @media screen and (max-width: 770px ) {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.link-blog-items {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 17px;
+    &__link{
+        text-decoration: none;
+        display: block;
+        color: #212121;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.fa-brand{
+    display: block;
+    color: #212121;;
+    padding: 5px;
+    &:not(:hover){
+        opacity: 0.8;
+    }
+}
+

@@ -1,0 +1,43 @@
+@import "templates.scss";
+
+.terms {
+   width: 100%;
+   &__title {
+      text-align: center;
+      margin-bottom: 45px;
+      &:last-child{
+         margin-bottom: 0px;
+      }
+   }
+   &__link {
+      text-decoration: none;
+      &:link{
+         color: #212121;
+      }
+      &:visited{
+         color: #212121;
+      }
+      &:hover{
+         color: #c09859;
+      }
+      &:active{
+         color: #c09859;
+      }
+   }
+}
+
+.terms-container{
+   margin-bottom: 68px;
+   @media screen and (max-width: 770px ) {
+      margin-bottom: 0;
+   }
+}
+
+.title {
+   @extend .styleh1;
+}
+
+.title-color{
+   color: #212121;
+}
+

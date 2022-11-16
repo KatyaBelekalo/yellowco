@@ -1,0 +1,29 @@
+@import "templates.scss";
+
+body{
+   background-color: #faf6ef;
+   color: #1c2018;
+   font-family: Karla;
+}
+
+.container {
+   max-width: 1034px;
+   margin: 0 auto;
+   padding: 17px;
+}
+
+
+.btn{
+   @extend .styleBtn;
+   &:hover{
+      background-color: #1c2018;
+      color: #fff;
+      cursor: pointer;
+   }
+   &:focus{
+      outline: none;
+   }
+}
+
+
+

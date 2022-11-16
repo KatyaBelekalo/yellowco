@@ -1,0 +1,64 @@
+@import "templates.scss";
+
+.planner {
+   width: 100%;
+   &__link {
+      text-decoration: none;
+   }
+   &__photo {
+      width: 100%;
+      max-height: 244px;
+      @media screen and (max-width: 770px ) {
+         max-height: 332px;
+         margin-bottom: 34px;
+      }
+   }
+   &__title {
+      margin-bottom: 13.5px;
+   }
+   &__text {
+      margin-bottom: 34px;
+   }
+}
+
+.planner-row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 117px;
+   @media screen and (max-width: 770px ) {
+      flex-direction: column;
+      margin-bottom: 34px;
+   }
+}
+
+.planner-left {
+   width: calc(100%/2 - 17px);
+   @media screen and (max-width: 770px ) {
+      width: 100%;
+   }
+}
+
+.planner-right {
+   width: calc(100%/2 - 17px);
+   @media screen and (max-width: 770px ) {
+      width: 100%;
+   }
+}
+
+.title {
+   @extend .styleh1;
+}
+
+.text {
+   @extend .styleText;
+}
+
+.planner-line{
+   margin-bottom: 100px;
+   &__icone {
+      width: 100%;
+   }
+   @media screen and (max-width: 770px ) {
+      margin-bottom: 0;
+   }
+}

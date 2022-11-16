@@ -1,0 +1,30 @@
+@import "templates.scss";
+
+.holistic-support {
+   width: 100%;
+   &__title{
+      margin-bottom: 20px;
+   }
+   &__btn{
+      display: inline-block;
+   }
+   &__subtitle{
+      margin-bottom: 34px;
+      }
+}
+
+.holistic-support-container{
+   padding-top: 0;
+}
+
+.title {
+   @extend .styleh1;
+}
+
+.subtitle {
+   @extend .styleh3;
+}
+
+
+
+
