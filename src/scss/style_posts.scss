@@ -54,9 +54,35 @@
    }
    &__link-blog {
       text-decoration: none;
+      text-decoration: none;
+      &:link{
+         color: rgba(28,32,24,.7);
+      }
+      &:visited{
+         color: #1c2018;
+      }
+      &:hover {
+         color: #c09859;
+         opacity: 1;
+      }
+      &:active{
+         color: #c09859;
+      }
    }
    &__link {
       text-decoration: none;
+      &:link{
+         color: #1c2018;
+      }
+      &:visited{
+         color: #1c2018;
+      }
+      &:hover {
+         color: #c09859;
+      }
+      &:active{
+         color: #c09859;
+      }
    }
    &__title{
       margin: 0;
